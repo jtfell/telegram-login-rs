@@ -1,0 +1,9 @@
+[package]
+name = "telegram-login-rs"
+version = "0.1.0"
+authors = ["Julian Fell <julesfell@gmail.com>"]
+
+[dependencies]
+ring = "0.13.1"
+hex = "0.3.2"
+chrono = "0.4"
