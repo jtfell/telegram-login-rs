@@ -1,5 +1,5 @@
 [package]
-name = "telegram-login-rs"
+name = "telegram-login"
 version = "0.1.0"
 authors = ["Julian Fell <julesfell@gmail.com>"]
 
