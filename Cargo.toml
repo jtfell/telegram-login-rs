@@ -2,6 +2,9 @@
 name = "telegram-login"
 version = "0.1.0"
 authors = ["Julian Fell <julesfell@gmail.com>"]
+description = "A rust implementation of the verification of Telegram Login requests"
+licence = "MIT"
+repository = "https://github.com/jtfell/telegram-login.git"
 
 [dependencies]
 ring = "0.13.1"
