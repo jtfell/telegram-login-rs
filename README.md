@@ -6,7 +6,7 @@ Based on the example from the [Telegram docs](https://core.telegram.org/widgets/
 
 ## Examples:
 
-```rs
+```rust
 extern crate chrono;
 extern crate telegram_login;
 
