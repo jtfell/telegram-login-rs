@@ -146,7 +146,7 @@ pub fn check_signature(bot_token: String, user: TelegramLogin) -> Result<(), Tel
         Ok(hash) => {
             let data_check_string = gen_check_string(user);
             let secret_key = digest::digest(&digest::SHA256, &bot_token.as_bytes());
-            let v_key = hmac::VerificationKey::new(&digest::SHA256, secret_key.as_ref());
+            let v_key = hmac::Key::new(hmac::HMAC_SHA256, secret_key.as_ref());
             hmac::verify(&v_key, data_check_string.as_bytes(), &hash)
                 .map_err(|_e| TelegramLoginError::VerificationFailed)
         }
